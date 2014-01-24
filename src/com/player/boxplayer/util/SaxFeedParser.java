@@ -22,7 +22,7 @@ public class SaxFeedParser {
 			SAXParser parser = factory.newSAXParser();
 			TileXmlHandler handler = new TileXmlHandler();
 			parser.parse(is, handler);
-			return handler.getTileGroups();//此处可能会没有数据。
+			return handler.getTileGroups();//
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
